@@ -1,10 +1,8 @@
 # Jogo-da-Velha
 ### My first Java repository that works like a tic-tac-toe game
 
-![Screenshot 2020-06-06 01 04 21](https://user-images.githubusercontent.com/62625567/83935733-94b25380-a792-11ea-8807-0f1bba894140.png)
-![Screenshot 2020-06-06 01 13 07](https://user-images.githubusercontent.com/62625567/83935774-2752f280-a793-11ea-9d27-e57c634d60f9.png)
-<br>
-This program goes until the end of the cycle in any case, but I'll add new functionalities in the future!
+![Screenshot 2020-09-28 15 08 37](https://user-images.githubusercontent.com/62625567/94469808-19d7d300-019d-11eb-847d-37ee0e4a340e.png)
+![Screenshot 2020-09-28 15 11 37](https://user-images.githubusercontent.com/62625567/94469815-1cd2c380-019d-11eb-8963-a386d3716264.png)
 
 ### Why I developed this?
 When I was bored at school, I used to play this game with a near friend. So, I remember those moments this year and I think "what if I do that on a program?"
