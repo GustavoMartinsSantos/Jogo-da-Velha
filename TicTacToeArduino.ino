@@ -14,7 +14,7 @@ void setup() {
 }
 
 int return_port(int position, bool red) {
-  if(red == true)
+  if(red == true) // First degree functions
   	return 2 * position - 2;
   return 2 * position - 1;
 }
@@ -22,7 +22,7 @@ int return_port(int position, bool red) {
 void loop() {
   Serial.println("Tic Tac Toe Game");
   out = false;
-  memset(matrix, 0, 9); // set matrix to null - to modify
+  memset(matrix, 0, sizeof(matrix)); // set matrix to null
   
   for(int cont = 0; cont < 9; cont++) {    
   	for(int y = 0; y < 3; y++) {
@@ -56,20 +56,18 @@ void loop() {
     for(int x = 0; x < 3; x++) {
 		if(matrix[x] > 0 &&
            matrix[x] == matrix[x+3] &&
-           matrix[x] == matrix[x+6])
-		{ // vertical line
-           for(int y = 0; y < 3; y++)
-              matrix[y] = return_port(y+1, red);
-           out = true;
+           matrix[x] == matrix[x+6]) {
+           for(int y = 0; y < 7; y += 3)
+              matrix[y/3] = return_port(x+y+1, red);
+           out = true; // vertical line
         }
         
         if(matrix[x*3] > 0 &&
            matrix[x*3] == matrix[x*3+1] &&
-           matrix[x*3] == matrix[x*3+2]) 
-		{ // horizontal line
+           matrix[x*3] == matrix[x*3+2]) {
            for(int y = 0; y < 3; y++)
-              matrix[y] = return_port(y+1, red);
-           out = true;
+              matrix[y] = return_port(x*3+y+1, red);
+           out = true; // horizontal line - to change
         }
     }
 
@@ -95,20 +93,22 @@ void loop() {
         delay(1000);
 		digitalWrite(digital_ports[matrix[z]], HIGH);
       }
+      
+      Serial.println("End of the program. Thanks for playing it!!\n");
+      
+      delay(5000);
+      
+      for(int i = 0; i < 18; i++) {
+		digitalWrite(digital_ports[i], LOW);
+        // turn off all lights
+	  }
         
       break;
     }
-	
-	/*for(int i = 0; i < 9; i++) {
-		if(matrix[i] > 0)
-		  digitalWrite(digital_ports,red), LOW); // turn off all lights
-	}*/
     
     if(red == true)
       red = false;
     else // it changes the user's turn
       red = true;
   }
-  	
-  Serial.println("End of the program. Thanks for playing it!!\n");
 }
