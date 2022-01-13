@@ -9,4 +9,10 @@ When I was bored at school, I used to play this game with a near friend. So, I r
 
 ### Requirements:
 * To run this project on your computer,you need the JDK SE. This project is developed in JDK SE 14.0.1, which you can download on this link - [SEJDK14.0.1](https://www.oracle.com/java/technologies/javase-jdk14-downloads.html).
-* You need to import this **Eclipse** project on your workspace.
+* You need to import this **Eclipse** project on your workspace.<br><br>
+
+## Android Version
+<video width="25%" controls>
+  <source src="https://user-images.githubusercontent.com/62625567/149171365-250bc220-398f-4bca-952d-14224f7a2de1.mp4">
+</video><br>
+This project was made on Android Studio, using the 1.8 Java Version (JDK 8)
