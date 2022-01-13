@@ -12,7 +12,7 @@ When I was bored at school, I used to play this game with a near friend. So, I r
 * You need to import this **Eclipse** project on your workspace.<br><br>
 
 ## Android Version
-<video width="25%" controls>
-  <source src="https://user-images.githubusercontent.com/62625567/149171365-250bc220-398f-4bca-952d-14224f7a2de1.mp4">
-</video><br>
+
+https://user-images.githubusercontent.com/62625567/149349129-75ee09c9-880d-43fa-935c-69a4eca67c98.mp4
+
 This project was made on Android Studio, using the 1.8 Java Version (JDK 8)
